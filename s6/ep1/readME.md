@@ -6,9 +6,9 @@ Apprenez à créer et utiliser un fichier de déclaration (.d.ts) pour typer un 
 
 ### 1 - Création du module fictif
 
-- Dans un dossier nommé `mon-module`, créez un fichier `index.js` contenant :
+- Dans un dossier nommé `mon-module`, créez un fichier `index.ts` contenant :
 
-  ```js
+  ```ts
   function alerter(message) {
     console.log("Alerte:", message);
   }
@@ -17,7 +17,7 @@ Apprenez à créer et utiliser un fichier de déclaration (.d.ts) pour typer un 
     console.log("Log:", message);
   }
 
-  module.exports = { alerter, logger };
+  export { alerter, logger };
   ```
 
 ### 2 - Création du fichier de déclaration
